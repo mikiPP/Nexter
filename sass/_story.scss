@@ -9,6 +9,15 @@
 
     background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)),
       url(../img/back.jpg);
+
+    & > img {
+      transition: all .5s;
+
+      &:hover {
+        transform: scale(1.1);
+        z-index: 3;
+      }
+    }
   }
 
   &__img--1{
@@ -27,7 +36,6 @@
   }
 
   &__content {
-
     //FLEX WAY
     display: flex;
     flex-direction: column;
